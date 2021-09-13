@@ -1,0 +1,707 @@
+/* head */ 
+/* body + header*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+#header  {
+    height: auto;
+    
+    
+    
+}
+#header .headerContenedor {
+    
+}
+#header .headerContenedor .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .headerContenedor .logo img {
+    width: 150;
+    height: 150px;
+    padding: 20px;
+}
+#header .headerContenedor .logo .menu ul {
+    display: flex;
+    list-style: none;
+    
+    
+    
+}
+#header .headerContenedor .logo .menu ul li a {
+    padding: 30px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+/* MAIN: falta que la imagen se quede el slider sequede quieto al bajar */
+#main { /* caja del main */
+    width: 1349px;
+    height: auto
+
+
+
+}
+#main .slider { /* caja del div */
+    width: 1349px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: -120px;
+
+
+   
+}
+#main .slider .sliderAnimacion { /* caja del ul */
+    position: absolute;
+    animation-name: buceo;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes buceo {
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25% {
+        left: -1350px;
+    }
+    45%{
+        left: -1350px;
+    }
+    50%{
+        left: -2700px;
+    }
+    70%{
+        left: -2700px;
+
+    }
+    
+    75%{
+        left: -4050px;
+    }
+    100%{
+        left: -4050px;
+    }
+    
+}
+#main .slider li {
+    display: table-cell;
+    
+}
+#main .slider img {
+    width: 1349px;
+    height: 350px;
+    
+}
+
+/* CURSOS ********************************************************************************************** */
+#main #cursos
+ .Cursos {
+    width: 1350px;
+    height: 200px    
+}
+#main .cursosContenedor {
+    height: 500px;
+
+}
+
+#main .titulos { /* ESTILOS PARA TODOS LOS TITULOS */
+    text-align: center;
+    background-color: blue;
+    height: 150px;
+    padding-top: 55px;
+    margin-bottom: 40px;
+    color: white;
+    font-family: 'Roboto', sans-serif; ;
+    font-size: 36px;/* fijarse la fuente en google fonts */
+}
+/* CURSOS INDEX **************************************************** */
+#main .cursosContenedor {
+    display: flex;
+    height: 400px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-left: 32px;
+    margin-right: 30px;
+}
+#main .cursosContenedor .cursosImagenes img {
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+}
+#main .cursosContenedor .cursosImagenes img:hover {
+    transform: scale(1.1);
+}
+#main .cursosContenedor .cursosImagenes p {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    color: indigo;
+}
+/* especialidades ******************************************** */
+#main .especialidadesContenedor {
+    display: flex;
+    height: 400px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-left: 32px;
+    margin-right: 30px;
+}
+#main .especialidadesContenedor .especialidadesImagenes img{
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+}
+#main .especialidadesContenedor .especialidadesImagenes img:hover {
+    transform: scale(1.1);
+}
+#main .especialidadesContenedor .especialidadesImagenes p {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    color: indigo;
+}
+/* viajes ************************************************************ */
+#main .viajesContenedor {
+    display: flex;
+    height: 400px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-left: 32px;
+    margin-right: 30px;
+}
+#main .viajesContenedor .viajesBuceo img{
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+}
+#main .viajesContenedor .viajesBuceo img:hover {
+    transform: scale(1.1);
+}
+#main .viajesContenedor .viajesBuceo p {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    color: indigo;
+}
+/* FOOTER  *****************************************************************************/
+
+#footer {
+    display: grid;
+    grid-template-rows: 100px;
+    width: auto;
+    height: 75px;
+   /*  background-color: red;  */
+    margin-top: 10px;
+    background-image: linear-gradient(to left, red, yellow); 
+}
+#footer .footerInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 75px;
+    align-items: center;
+    
+}
+/* viajes html ********************************************************************************************************** */
+
+ #main .viajesContenedorHtml {
+    display: grid;
+     grid-template-columns: 400px 800px
+     grid-template-rows: 400px 4000px 400px 400px;
+     column-gap: 20px;
+     row-gap: 20px;
+     height: auto; 
+     grid-template-areas: 'mexico descripcionMexico '
+     'bariloche descripcionBariloche'
+     'madryn descripcionMadryn'
+     'brasil descripcionBrasil';
+ }
+ 
+ #main .viajesContenedorHtml .mexico {
+    grid-area: mexico;
+    border: 1px solid black;
+    margin-left: 50px;
+    
+    
+}
+#main .viajesContenedorHtml .mexico img {
+    width: 300px;
+    height: 300px;
+    
+    
+}
+#main .viajesContenedorHtml .mexico .lugares {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    color: #323232 ;
+    font-size: 20px;
+    font-weight: 400;
+    
+    
+}
+    
+
+#main .viajesContenedorHtml .parrafoMexico {
+    grid-area: descripcionMexico;
+    align-self: center;
+}
+#main .viajesContenedorHtml .parrafoMexico p {
+    align-self: center;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-family: 'Bebas Neue', cursive;
+    justify-content: center;
+}
+#main .viajesContenedorHtml .bariloche {
+    grid-area: bariloche;
+    justify-items: center;
+    border: 1px solid black;
+    margin-left: 50px;
+    
+}
+#main .viajesContenedorHtml .bariloche img {
+    width: 300px;
+    height: 300px;
+    
+    
+}
+#main .viajesContenedorHtml .bariloche .lugares {
+    justify-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    color: #323232 ;
+    font-size: 20px;
+    font-weight: 400;
+    
+    
+}
+    
+
+#main .viajesContenedorHtml .parrafoBariloche {
+    grid-area: descripcionBariloche;
+    align-self: center;
+    
+
+}
+#main .viajesContenedorHtml .parrafoBariloche p {
+    align-self: center;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-family: 'Bebas Neue', cursive;
+
+}
+#main .viajesContenedorHtml .madryn {
+    grid-area: madryn;
+    justify-items: center;
+    border: 1px solid black;
+    margin-left: 50px;
+    
+}
+#main .viajesContenedorHtml .madryn img {
+    width: 300px;
+    height: 300px;
+    
+    
+}
+#main .viajesContenedorHtml .madryn .lugares {
+
+    justify-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    color: #323232 ;
+    font-size: 20px;
+    font-weight: 400;
+    
+    
+}
+    
+
+#main .viajesContenedorHtml .parrafoMadryn {
+    grid-area: descripcionMadryn;
+    align-self: center;
+    
+
+}
+#main .viajesContenedorHtml .parrafoMadryn p {
+    
+    align-self: center;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-family: 'Bebas Neue', cursive;
+}
+#main .viajesContenedorHtml .brasil {
+    grid-area: brasil;
+    justify-items: center;
+    border: 1px solid black;
+    margin-left: 50px;
+    
+}
+#main .viajesContenedorHtml .brasil img {
+    width: 300px;
+    height: 300px;
+    
+    
+}
+#main .viajesContenedorHtml .brasil .lugares {
+
+    justify-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    color: #323232 ;
+    font-size: 20px;
+    font-weight: 400;
+    
+    
+}
+    
+
+#main .viajesContenedorHtml .parrafoBrasil {
+    grid-area: descripcionBrasil;
+    align-self: center;
+    
+
+}
+#main .viajesContenedorHtml .parrafoBrasil p {
+    
+    align-self: center;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-family: 'Bebas Neue', cursive;
+}
+    
+
+/* CURSOS.HTML ******************************************************************* */
+
+
+/* cursos */
+#main .cursosContenedorHtml {
+    
+    width: 1349px;
+    height: 1600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    /*   falta solucionar el fondo. debe quedar el fndo completo no en cuadriculas*/ 
+    
+}
+#main .cursosContenedorHtml .cursosImagenes {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 300px;
+    
+}
+#main .cursosContenedorHtml .cursoTitulo {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    color: #323232 ;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+#main .cursosContenedorHtml .cursosImagenes img {
+    width: 300px;
+    height: 300px;
+}
+#main .cursosContenedorHtml .parrafoCursos  {
+    width: 800px;
+    height: 300px;
+    margin: 30px; 
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+/* ESPECIALIDADES HTML *//* ESPECIALIDADES HTML ***************************************** */
+
+#main .especialidadesContenedorHtml {
+    display: grid;
+     grid-template-columns: 400px 800px
+     grid-template-rows: 400px 4000px 400px 400px;
+     column-gap: 20px;
+     row-gap: 20px;
+     height: auto; 
+     grid-template-areas: 'profundo descripcionProfundo '
+     'naufragio descripcionNaufragio'
+     'flotabilidad descripcionFlotabilidad'
+     'navegacion descripcionNavegacion';
+     
+     
+ }
+ 
+ #main .especialidadesContenedorHtml .profundo {
+    grid-area: profundo;
+    justify-items: center;
+    border: 1px solid black;
+    margin-left: 50px;
+    
+}
+#main .especialidadesContenedorHtml .profundo img {
+    width: 300px;
+    height: 300px;
+    
+    
+}
+#main .especialidadesContenedorHtml .profundo .especialidades {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    color: #323232 ;
+    font-size: 20px;
+    font-weight: 400;
+    
+    
+}
+    
+
+#main .especialidadesContenedorHtml .parrafoProfundo {
+    grid-area: descripcionProfundo;
+    align-self: center;
+    
+
+}
+#main .especialidadesContenedorHtml .parrafoProfundo p {
+
+    align-self: center;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-family: 'Bebas Neue', cursive;
+
+}
+#main .especialidadesContenedorHtml .naufragio {
+    grid-area: naufragio;
+    justify-items: center;
+    border: 1px solid black;
+    margin-left: 50px;
+    
+}
+#main .especialidadesContenedorHtml .naufragio img {
+    width: 300px;
+    height: 300px;
+    
+    
+}
+#main .especialidadesContenedorHtml .naufragio .especialidades {
+    justify-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    color: #323232 ;
+    font-size: 20px;
+    font-weight: 400;
+    
+    
+}
+    
+
+#main .especialidadesContenedorHtml .parrafoNaufragio {
+    grid-area: descripcionNaufragio;
+    align-self: center;
+    
+
+}
+#main .especialidadesContenedorHtml .parrafoNaufragio p {
+    align-self: center;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#main .especialidadesContenedorHtml .flotabilidad {
+    grid-area: flotabilidad;
+    justify-items: center;
+    border: 1px solid black;
+    margin-left: 50px;
+    
+}
+#main .especialidadesContenedorHtml .flotabilidad img {
+    width: 300px;
+    height: 300px;
+    
+    
+}
+#main .especialidadesContenedorHtml .flotabilidad .especialidades {
+    justify-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    color: #323232 ;
+    font-size: 20px;
+    font-weight: 400;    
+}
+    
+
+#main .especialidadesContenedorHtml .parrafoFlotabilidad {
+    grid-area: descripcionFlotabilidad;
+    align-self: center;
+}
+#main .especialidadesContenedorHtml .parrafoFlotabilidad p {
+    align-self: center;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-family: 'Bebas Neue', cursive;
+}
+#main .especialidadesContenedorHtml .navegacion {
+    grid-area: navegacion;
+    justify-items: center;
+    border: 1px solid black;
+    margin-left: 50px;
+    
+}
+#main .especialidadesContenedorHtml .navegacion img {
+    width: 300px;
+    height: 300px;
+    
+     
+}
+#main .especialidadesContenedorHtml .navegacion .especialidades {
+    
+    justify-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    color: #323232 ;
+    font-size: 20px;
+    font-weight: 400;
+    
+    
+}
+    
+
+#main .especialidadesContenedorHtml .parrafoNavegacion {
+    grid-area: descripcionNavegacion;
+    align-self: center;
+    
+
+}
+#main .especialidadesContenedorHtml .parrafoNavegacion p {
+    align-self: center;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+    
+/* QUIENES SOMOS HTML***************************************************************** */
+#main .quienesSomos {
+    height: auto;
+}
+#main .quienesSomos .quienesSomosTexto {
+    height: auto;
+    width: 700px;
+    left: 350px;
+    position: relative;
+    
+}
+#main .quienesSomos .quienesSomosTexto p {
+
+    position: relative;
+    bottom: 300px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: indigo;
+    
+
+}
+#main .quienesSomosImg img {
+    height: 300px;
+    width: 300px;
+
+}
+#main .quienesSomos .iframe {
+    position: relative;
+    left: 300px;
+    bottom: 150px;
+    width: 800px;
+    height: 400px;
+}
+
+/* CONTACTO HTML ************************************************************************* */
+
+#main .formulario {
+    margin: 30px 60px;
+
+}
+#main .contacto .pregunta {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+#main .contacto .texto {
+    margin-top: 30px;
+    
+    line-height: 30px;
+    color: #7e7e7e;
+    
+}
+#main .contacto p {
+    margin-left: 62px;
+    font-family: 'Abel', sans-serif;
+    color: #5499d2;
+    
+}
+#main .formulario label {
+    display: block;
+    font-size: 16px;
+    font-weight: 900;
+} 
+#main .formulario .controles {
+    width: 400px;
+    height: 20px;
+    border: 1px solid rgb(171, 184, 180);
+    padding: 14px 12px;
+    margin: 8px 0px;
+
+}
+#main .formulario .button {
+    background: black;
+    border: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 20px 175px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#main .formulario .mapa iframe {
+    display: block;
+    margin-left: 600px;
+    margin-top: -450px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
