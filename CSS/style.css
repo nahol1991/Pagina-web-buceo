@@ -445,7 +445,7 @@
      column-gap: 20px;
      row-gap: 20px;
      height: auto; 
-     grid-template-areas: 'profundo descripcionProfundo '
+     grid-template-areas: 'profundo descripcionProfundo'
      'naufragio descripcionNaufragio'
      'flotabilidad descripcionFlotabilidad'
      'navegacion descripcionNavegacion';
@@ -484,7 +484,6 @@
 
 }
 #main .especialidadesContenedorHtml .parrafoProfundo p {
-
     align-self: center;
     letter-spacing: 1px;
     line-height: 25px;
